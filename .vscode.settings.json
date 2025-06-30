@@ -32,6 +32,7 @@
   "editor.minimap.maxColumn": 40,
   "editor.minimap.renderCharacters": false,
   "editor.minimap.showSlider": "always",
+  "editor.occurrencesHighlight": "off",
   "editor.parameterHints.enabled": false,
   "editor.renderControlCharacters": true,
   "editor.renderLineHighlight": "gutter",
@@ -128,7 +129,7 @@
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
