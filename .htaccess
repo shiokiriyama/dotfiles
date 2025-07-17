@@ -1,0 +1,100 @@
+Options -Indexes
+
+<Files ~ "^\.(htaccess|htpasswd)$">
+Deny from all
+</Files>
+
+# --- Basic Auth ---
+AuthUserFile /home/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Please enter your ID and password"
+AuthType Basic
+Require valid-user
+
+# --- ETag Ignore ---
+<ifModule mod_headers.c>
+Header unset ETag
+</ifModule>
+FileETag None
+
+# --- Enable Keep-Alive ---
+<IfModule mod_headers.c>
+Header set Connection keep-alive
+</IfModule>
+
+# --- Add MINE Type ---
+<IfModule mime_module>
+AddType text/cache-manifest .appcache
+AddType image/x-icon .ico
+AddType image/svg+xml .svg
+AddType application/x-font-ttf .ttf
+AddType application/x-font-woff .woff
+AddType application/x-font-woff2 .woff2
+AddType application/x-font-opentype .otf
+AddType application/vnd.ms-fontobject .eot
+</IfModule>
+
+# --- Error Page ---
+ErrorDocument 404 /404.html
+
+# --- Redirect ---
+<IfModule mod_rewrite.c>
+RewriteEngine on
+# --- Redirect Without www ---
+RewriteCond %{HTTP_HOST} ^(www\.exsample\.com)(:80)? [NC]
+RewriteRule ^(.*) https://exsample.com/$1 [R=301,L]
+# --- Redirect Without https ---
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://exsample.com/$1 [R=301,L]
+</IfModule>
+
+# --- Gzip Compression ---
+<IfModule mod_deflate.c>
+SetOutputFilter DEFLATE
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch \bMSI[E]\s(7|8) !no-gzip !gzip-only-text/html
+SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|ico|eot|woff|woff2)$ no-gzip dont-vary
+Header append Vary Accept-Encoding env=!dont-vary
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/js
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/atom_xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/x-httpd-php
+AddOutputFilterByType DEFLATE application/x-httpd-fastphp
+AddOutputFilterByType DEFLATE application/x-font-ttf
+AddOutputFilterByType DEFLATE application/x-font-opentype
+</IfModule>
+
+# --- Browser Cache ---
+<IfModule mod_headers.c>
+<ifModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 7 days"
+ExpiresByType text/css "access plus 7 days"
+ExpiresByType text/html "access plus 7 days"
+ExpiresByType text/javascript "access plus 7 days"
+ExpiresByType text/plain "access plus 7 days"
+ExpiresByType image/gif "access plus 7 days"
+ExpiresByType image/jpeg "access plus 7 days"
+ExpiresByType image/png "access plus 7 days"
+ExpiresByType image/svg+xml "access plus 365 days"
+ExpiresByType image/x-icon "access plus 365 days"
+ExpiresByType application/pdf "access plus 7 days"
+ExpiresByType application/javascript "access plus 7 days"
+ExpiresByType application/x-javascript "access plus 7 days"
+ExpiresByType application/x-font-ttf "access plus 365 days"
+ExpiresByType application/x-font-woff "access plus 365 days"
+ExpiresByType application/x-font-woff2 "access plus 365 days"
+ExpiresByType application/x-font-opentype "access plus 365 days"
+ExpiresByType application/vnd.ms-fontobject "access plus 365 days"
+</ifModule>
+</IfModule>
