@@ -5,7 +5,8 @@
   "breadcrumbs.enabled": true,
   "breadcrumbs.symbolSortOrder": "type",
   "chat.commandCenter.enabled": false,
-  "color-highlight.markerType": "dot-before",
+  "color-highlight.markerType": "underline",
+  "color-highlight.markRuler": false,
   "diffEditor.renderSideBySide": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
