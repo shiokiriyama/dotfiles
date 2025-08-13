@@ -7,6 +7,15 @@
   "chat.commandCenter.enabled": false,
   "color-highlight.markerType": "underline",
   "color-highlight.markRuler": false,
+  "cSpell.userWords": [
+    "FLOCSS",
+    "kiriyama",
+    "navi",
+    "Pixi.js",
+    "Shio",
+    "Shiokiriyama"
+  ],
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
@@ -81,10 +90,11 @@
     {
       "format": "compressed",
       "extensionName": ".min.css",
-      "savePath": "/~/../css",
+      "savePath": "~/../css",
       "savePathReplacementPairs": null
     }
   ],
+  "liveSassCompile.settings.autoprefix": false,
   "liveSassCompile.settings.showAnnouncements": false,
   "liveSassCompile.settings.showOutputWindowOn": "None",
   "prettier.jsxSingleQuote": true,
