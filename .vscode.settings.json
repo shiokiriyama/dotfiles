@@ -7,14 +7,7 @@
   "chat.commandCenter.enabled": false,
   "color-highlight.markerType": "underline",
   "color-highlight.markRuler": false,
-  "cSpell.userWords": [
-    "FLOCSS",
-    "kiriyama",
-    "navi",
-    "Pixi.js",
-    "Shio",
-    "Shiokiriyama"
-  ],
+  "cSpell.userWords": [],
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "editor.codeActionsOnSave": {
