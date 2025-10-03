@@ -1,4 +1,28 @@
 {
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "black-formatter.args": [
     "--skip-string-normalization"
   ],
@@ -51,7 +75,7 @@
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {},
-  "editor.wordWrap": "bounded",
+  "editor.wordWrap": "on",
   "editor.wordWrapColumn": 120,
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
@@ -79,15 +103,15 @@
   "html.format.unformatted": null,
   "html.format.wrapLineLength": 0,
   "insertDateString.format": "YYYY-MM-DD'T'hh:mm:ss+09:00",
+  "liveSassCompile.settings.autoprefix": false,
   "liveSassCompile.settings.formats": [
     {
-      "format": "compressed",
       "extensionName": ".min.css",
+      "format": "compressed",
       "savePath": "~/../css",
       "savePathReplacementPairs": null
     }
   ],
-  "liveSassCompile.settings.autoprefix": false,
   "liveSassCompile.settings.showAnnouncements": false,
   "liveSassCompile.settings.showOutputWindowOn": "None",
   "prettier.jsxSingleQuote": true,
@@ -113,29 +137,5 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.layoutControl.enabled": false,
   "workbench.panel.defaultLocation": "right",
-  "workbench.startupEditor": "none",
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "workbench.startupEditor": "none"
 }
