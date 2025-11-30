@@ -95,6 +95,7 @@
   "files.watcherExclude": {
     "**/images/**": true
   },
+  "git.autofetch": true,
   "git.ignoreMissingGitWarning": true,
   "git.openRepositoryInParentFolders": "never",
   "html.autoClosingTags": false,
@@ -121,6 +122,7 @@
   "scss.format.newlineBetweenRules": false,
   "scss.format.newlineBetweenSelectors": false,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.tabs.enabled": false,
   "window.commandCenter": false,
   "window.openFoldersInNewWindow": "on",
   "window.title": "${dirty}${separator}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
@@ -137,5 +139,5 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.layoutControl.enabled": false,
   "workbench.panel.defaultLocation": "right",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
 }
