@@ -1,12 +1,12 @@
 {
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "prettier.prettier-vscode"
   },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "prettier.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -21,7 +21,7 @@
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "prettier.prettier-vscode"
   },
   "black-formatter.args": [
     "--skip-string-normalization"
@@ -42,7 +42,7 @@
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "line-thin",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "prettier.prettier-vscode",
   "editor.dragAndDrop": false,
   "editor.fontFamily": "'更紗等幅ゴシック J', monospace",
   "editor.fontSize": 14,
@@ -51,7 +51,7 @@
   "editor.formatOnSave": false,
   "editor.formatOnType": false,
   "editor.guides.indentation": true,
-  "editor.hover.enabled": false,
+  "editor.hover.enabled": "off",
   "editor.hover.sticky": false,
   "editor.letterSpacing": 0,
   "editor.lineHeight": 21,
@@ -129,7 +129,7 @@
   "window.zoomLevel": 0,
   "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {
-    "editor.background": "#1b1c16", // #272822(monokai)
+    "editor.background": "#1b1c16",
     "editorRuler.foreground": "#fff1"
   },
   "workbench.colorTheme": "Monokai",
@@ -139,5 +139,5 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.layoutControl.enabled": false,
   "workbench.panel.defaultLocation": "right",
-  "workbench.startupEditor": "none",
+  "workbench.startupEditor": "none"
 }
