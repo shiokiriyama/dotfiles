@@ -1,12 +1,12 @@
 {
   "[css]": {
-    "editor.defaultFormatter": "prettier.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "prettier.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -15,13 +15,17 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "files.trimTrailingWhitespace": false,
   },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "[scss]": {
-    "editor.defaultFormatter": "prettier.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "black-formatter.args": [
     "--skip-string-normalization"
@@ -42,7 +46,7 @@
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "line-thin",
-  "editor.defaultFormatter": "prettier.prettier-vscode",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.dragAndDrop": false,
   "editor.fontFamily": "'更紗等幅ゴシック J', monospace",
   "editor.fontSize": 14,
@@ -115,6 +119,8 @@
   ],
   "liveSassCompile.settings.showAnnouncements": false,
   "liveSassCompile.settings.showOutputWindowOn": "None",
+  "markdown.extension.print.pureHtml": true,
+  "markdown.extension.print.imgToBase64": true,
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,
   "python.defaultInterpreterPath": "C:\\Python\\python.exe",
@@ -129,7 +135,7 @@
   "window.zoomLevel": 0,
   "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {
-    "editor.background": "#1b1c16",
+    "editor.background": "#1b1c16", // #272822(monokai)
     "editorRuler.foreground": "#fff1"
   },
   "workbench.colorTheme": "Monokai",
@@ -139,5 +145,6 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.layoutControl.enabled": false,
   "workbench.panel.defaultLocation": "right",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
 }
